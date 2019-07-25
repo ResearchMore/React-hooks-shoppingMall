@@ -1,0 +1,4 @@
+@import '~css/mixin';
+.collection {
+    @include scroll(40px, 0, 0);
+}

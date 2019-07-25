@@ -1,0 +1,52 @@
+@import '~css/mixin';
+
+*::-webkit-scrollbar {
+    display: none;
+    overflow: -moz-hidden-unscrollable;
+    /*注意！若只打 hidden，chrome 的其它 hidden 会出问题*/
+}
+
+#root .goods-item:last-child::before {
+    border: 0;
+}
+
+.page-warp {
+    height: 100%;
+    width: 100%;
+}
+
+// #root>div>div {
+//     height: 100%;
+//     width: 100%;
+//     overflow: hidden;
+// }
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.error-icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.za-nav-bar-title {
+    font-size: 16px;
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 50px;
+    color: #bbb;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}

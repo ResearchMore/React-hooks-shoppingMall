@@ -1,0 +1,36 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin scroll($top,$bottom,$left) {
+    position: fixed!important;
+    top: $top;
+    left: $left;
+    right: 0;
+    bottom: $bottom;
+    .scroll-warpper-app {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+p {
+    margin: 0;
+}
+li {
+    list-style: none;
+}

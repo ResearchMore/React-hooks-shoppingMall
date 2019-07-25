@@ -1,0 +1,26 @@
+@import '~css/mixin';
+
+.shopping-cart {
+    @include scroll(49px, 50px, 0);
+}
+
+.payMent {
+    @include scroll(150px, 55px, 0);
+
+}
+
+.pay-ok {
+    i {
+        margin-right: 15px;
+    }
+    .btn {
+        width:90%;
+        margin: 100px auto;
+    }
+    .za-cell__inner {
+        margin-top: 5px;
+    }
+    .za-cell:after {
+        border: 0;
+    }
+}

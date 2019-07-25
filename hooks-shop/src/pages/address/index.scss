@@ -1,0 +1,66 @@
+@import '~css/mixin';
+
+.address-list {
+    @include scroll(45px, 45px, 0);
+    .item {
+        margin-top: 1px;
+        position: relative;
+
+        .item-cell {
+            margin-left: 40px;
+            width: 280px;
+            @include ellipsis();
+            p {
+                font-size: 3.733vw;
+                line-height: 5.333vw;
+                margin-bottom: 1.333vw;
+            }
+
+            span {
+                font-size: 3.2vw;
+                line-height: 4.267vw;
+                color: #7d7e80;
+            }
+
+            .fa-edit {
+                color: #323233;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px;
+            }
+            .fa-dot-circle-o {
+                color: #e0322b;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+
+    }
+
+    .za-cell:after {
+        border: 0;
+    }
+
+    .za-cell__footer {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+
+    .btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .za-cell__inner {
+        padding: 0;
+    }
+}

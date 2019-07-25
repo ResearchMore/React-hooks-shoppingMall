@@ -1,0 +1,55 @@
+@import '~css/mixin';
+
+.details {
+    @include scroll(0 ,55px,0);
+    .banner {
+        height: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .goods-name {
+        color: #323233;
+        font-size: 3.733vw;
+        padding: 2.667vw 4vw;
+
+        .goods-title {
+            font-size: 4.267vw;
+        }
+
+        .pic {
+            color: #f44;
+            margin-top: 10px;
+        }
+    }
+    .goods-express {
+        padding: 2.667vw 4vw;
+        display: flex;
+        justify-content: center;
+        span {
+            font-size: 14px;
+            flex: 1;
+            &:nth-child(3) {
+                text-align: center;
+            }
+        }
+    }
+}
+.icon-back {
+    position: fixed;
+    width: 9.333vw;
+    height: 9.333vw;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    top: 1.3%;
+    left: 2%;
+    text-align: center;
+    line-height: 9.333vw;
+    z-index: 15;
+    i {
+        color: #fff;
+        font-size: 20px;
+    }
+}

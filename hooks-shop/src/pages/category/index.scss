@@ -1,0 +1,54 @@
+@import '~css/mixin';
+.content {
+    display: flex;
+
+    .left {
+        background: #f1f8ff;
+        flex: 0 0 21.333vw;
+        height: calc(100vh - 90px);
+        
+        li {
+            color: #666;
+            height: 11.467vw;
+            line-height: 11.467vw;
+            font-size: 3.733vw;
+            text-align: center;
+            border-bottom: 1px solid #efefef;
+        }
+
+        li.active {
+            background: #fff;
+        }
+
+    }
+
+    .right {
+        overflow-x: auto;
+        flex: 1;
+        .tab-title {
+            overflow-x: auto;
+            height: 43px;
+            border-bottom: 1px solid #f1f1f1;
+            display: flex;
+            text-align: center;
+            .tab-item {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                width: 21.333vw;
+                justify-content: center;
+                font-size: 3.733vw;
+            }
+            .tab-item.active {
+                color: #e0322b;
+            }
+        }
+    }
+}
+
+
+
+
+.scroll-warpper-category {
+    @include scroll(86px,50px,21.333vw)
+}

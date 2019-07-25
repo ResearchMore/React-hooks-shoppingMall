@@ -1,0 +1,315 @@
+// 公共
+.title {
+    background: #ededed;
+    height: 10.667vw;
+    line-height: 10.667vw;
+    text-align: center;
+    color: #e0322b;
+    font-size: 4vw;
+}
+
+// 头部
+header {
+    line-height: 11.733vw;
+    position: relative;
+    z-index: 10;
+    display: flex !important;
+    align-items: center;
+    background: #eee;
+
+    .left {
+        text-align: center;
+        background: #f2f2f2;
+        font-size: 3.2vw;
+        position: relative;
+        max-width: 32vw;
+        width: 20%;
+        flex: 0 0 20%;
+        height: 11.733vw;
+        line-height: 11.733vw;
+    }
+
+    .right {
+        flex: 0 0 80%;
+        width: 80%;
+
+        .za-search-bar {
+            margin-right: 10px;
+            background: #eee;
+            .za-search-bar__form {
+                margin: 0;
+                background: #eee;
+                width: 100%;
+                margin-right: 10px;
+
+                .za-search-bar__content {
+                    background: #fff;
+                }
+                .za-search-bar__mock .za-icon{
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+}
+
+.swiper-container {
+    .swiper-wrapper {
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .za-swipe-pagination {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+// panl
+.panl {
+    background: #eee;
+    padding: 4vw 0 6.667vw;
+
+    ul {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 2.667vw;
+        padding: 4vw 0 1.867vw;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: #fff;
+        -webkit-box-shadow: 0.8vw 1.067vw 5.333vw rgba(45, 45, 45, .15);
+        box-shadow: 0.8vw 1.067vw 5.333vw rgba(45, 45, 45, .15);
+
+        li {
+            flex: 0 0 20%;
+            text-align: center;
+            img {
+                width: 70%;
+                margin-bottom: 2.667vw;
+            }
+
+            p {
+                font-size: 3.733vw;
+                color: #333;
+            }
+        }
+    }
+
+    .ad {
+        width: 100%;
+        margin-top: 2.667vw;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 推荐商品
+.commodity {
+
+    .titles {
+        height: 9.333vw;
+        line-height: 9.333vw;
+        padding-left: 4vw;
+        box-sizing: border-box;
+        font-size: 4vw;
+    }
+
+    .swiper-container1 {
+        height: 200px;
+        .swiper-slide {
+            width: 33.33%;
+        }
+    }
+
+    .recommend-item {
+        height: 100%;
+        margin-right: 0 !important;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        padding-top: 5px;
+        img {
+            width: 80%;
+        }
+
+        .name {
+            padding: 1.333vw 0 .5vw 2vw;
+            font-size: 3.467vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333;
+            text-align: left;
+        }
+
+        .price {
+            padding: 1.333vw 0 0 2vw;
+            text-align: left;
+
+            .code {
+                font-size: 3.733vw;
+            }
+
+            .mallPrice {
+                font-size: 4vw;
+            }
+
+            .price-min {
+                font-size: 3.2vw;
+                text-decoration: line-through;
+                color: #999;
+                display: inline-block;
+                margin-left: 1.333vw;
+            }
+        }
+
+        .item {
+            padding: 0 2vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 2.667vw;
+
+            .left {
+                width: 30%;
+                padding: 2vw;
+                background: #feca3a;
+                border-radius: 1.333vw 0 0 1.067vw;
+                color: #fff;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+
+                .fa {
+                    font-size: 3.7vw;
+                }
+            }
+
+            .right {
+                width: 70%;
+                text-align: center;
+                padding: 2.667vw;
+                font-size: 3.2vw;
+                background: #ff4c38;
+                border-radius: 0 1.333vw 1.333vw 0;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// floor
+.floor {
+    .title {
+        background: #ededed;
+        height: 10.667vw;
+        line-height: 10.667vw;
+        text-align: center;
+        color: #e0322b;
+        font-size: 4vw;
+    }
+
+    .floor-warpper {
+        display: flex;
+        flex-direction: column;
+
+        .floor-top {
+            display: flex;
+
+            .floor-top-left {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .floor-top-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .floor-bottom {
+            display: flex;
+
+            div {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// hot-goods
+
+.hot-goods {
+    display: flex;
+    flex-wrap: wrap;
+    background: #eee;
+    justify-content: space-between;
+    padding: 0;
+    li {
+        flex: 0 0 49.9%;
+        width: 50% !important;
+        margin-right: 0 !important;
+        overflow: hidden;
+        text-align: center;
+        background: #fff;
+        padding-bottom: 1.333vw;
+
+        img {
+            width: 80%;
+        }
+
+        .name {
+            padding: 1.333vw 2vw 0;
+            color: #e0322b;
+            font-size: 3.733vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .price {
+            color: #e0322b;
+            padding-top: 1.333vw;
+
+            .code {
+                font-size: 3.467vw;
+            }
+
+            .mallPrice {
+                font-size: 4vw;
+                color: #e0322b;
+                font-weight: 700;
+            }
+
+            .price-min {
+                font-size: 3.2vw;
+                text-decoration: line-through;
+                color: #999;
+                display: inline-block;
+                margin-left: 1.333vw;
+            }
+        }
+    }
+}

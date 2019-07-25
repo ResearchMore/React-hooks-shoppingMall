@@ -1,0 +1,16 @@
+@import '~css/mixin';
+
+.browse {
+    @include scroll(40px, 0, 0);
+    
+}
+.browse-header {
+    position: relative;
+    span {
+        position: absolute;
+        font-size: 14xp;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

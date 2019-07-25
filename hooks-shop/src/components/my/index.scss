@@ -1,0 +1,107 @@
+.user {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: #e30c7b;
+    padding: 10% 0;
+    box-sizing: border-box;
+    position: relative;
+
+    span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 18.667vw;
+        height: 18.667vw;
+        border-radius: 50%;
+    }
+
+    p {
+        color: #fff;
+        font-size: 3.733vw;
+        margin-top: 5.333vw;
+    }
+}
+
+// user-links
+.user-links {
+    font-size: 3.733vw;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 2px;
+    div {
+        position: relative;
+        width: 50%;
+        padding: 4vw 0;
+
+        i {
+            display: block;
+            font-size: 5.4vw;
+            margin-bottom: 2.667vw;
+            color: #999;
+        }
+
+        .titles {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .count {
+            position: absolute;
+            left: 53%;
+            top: 1.8vw;
+            color: #fff;
+            background: #e0322b;
+            display: inline-block;
+            width: 5.333vw;
+            height: 5.333vw;
+            line-height: 5.333vw;
+            font-size: 12px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.cell {
+    div {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        box-sizing: border-box;
+        position: relative;
+        background-color: #fff;
+        color: #333;
+        font-size: 3.733vw;
+        overflow: hidden;
+        align-items: center;
+        padding: 8px 15px;
+
+        i {
+            font-size: 4.267vw;
+            margin-right: 3.333vw;
+            color: #666;
+        }
+
+        span {
+            flex: 1;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .right {
+            color: #999;
+            font-size: 5vw;
+            line-height: 9.333vw;
+            color: #666;
+            margin-left: 1.333vw;
+        }
+    }
+}

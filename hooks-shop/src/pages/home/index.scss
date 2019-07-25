@@ -1,0 +1,4 @@
+@import '~css/mixin';
+.scroll-warpper {
+    @include scroll(43px,50px,0)
+}

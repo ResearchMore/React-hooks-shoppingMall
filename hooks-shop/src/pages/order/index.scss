@@ -1,0 +1,90 @@
+@import '~css/mixin';
+
+.order {
+    @include scroll(40px, 0, 0);
+    background: #f2f2f2;
+    .item {
+        margin: 2.667vw;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 4vw 2.667vw;
+        background: #fff;
+        border-radius: 2.667vw;
+
+        .top {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-bottom: 2.667vw;
+            font-size: 14px;
+            color: #333;
+            .order-ok {
+                color: #d2591b;
+            }
+        }
+
+        .list {
+            display: flex;
+            height: 21.333vw;
+            margin-top: 4vw;
+            font-size: 0;
+
+            img {
+                flex: 0 0 21.333vw;
+                width: 21.333vw;
+                height: 100%;
+                border-radius: 2.667vw;
+                margin-right: 2.667vw;
+                border: 1px solid #eee;
+            }
+
+            .good-title {
+                flex: 1;
+                margin-top: .8vw;
+                line-height: 1.4;
+                font-size: 3.467vw;
+                letter-spacing: .5px;
+                margin-right: 2.667vw;
+                color: #333;
+            }
+
+            .good-count {
+                text-align: right;
+                margin-top: 1.333vw;
+                font-size: 3.467vw;
+
+                .count {
+                    margin-top: 1.333vw;
+                    color: #bbb;
+                }
+            }
+        }
+
+        .timre {
+            margin-top: 2.667vw;
+            padding-top: 2.667vw;
+            text-align: right;
+        }
+
+        .bottom {
+            text-align: right;
+            margin-top: 2.667vw;
+            font-size: 14px;
+            color: #333;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    .item:first-child {
+        margin-top: 0;
+    }
+}
+
+.scroll-list {
+    padding: 10px 0;
+}
